@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<catlog>
+  <BOOK>
+    <LANGUAGE>C</LANGUAGE>
+    <VERSION>2V</VERSION>
+  </BOOK>
+
+  <BOOK>
+    <LANGUAGE>JAVA</LANGUAGE>
+    <VERSION>4V</VERSION>
+  </BOOK>
+
+  <BOOK>
+    <LANGUAGE>DOTNET</LANGUAGE>
+    <VERSION>3V</VERSION>
+  </BOOK>
+
+  <BOOK>
+    <LANGUAGE>PYTHON</LANGUAGE>
+    <VERSION>1V</VERSION>
+  </BOOK>
+
+  <BOOK>
+    <LANGUAGE>JAVASCRIPT</LANGUAGE>
+    <VERSION>3V</VERSION>
+  </BOOK>
+</catlog>

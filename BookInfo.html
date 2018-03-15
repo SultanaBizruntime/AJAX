@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+</head>
+<body>
+    <div id='ShowBook'></div>
+    <script>
+        displayBook(0);
+        function displayBook(i)
+        {
+            var xmlhttp = new XMLHttpRequest();
+            xmlhttp.onreadystatechange = function ()
+            {
+                if (this.readyState == 4 && this.status == 200)
+                {
+                    myFunction(this, i);
+                }
+            };
+            xmlhttp.open("GET", "LanguageDemo.xml", true);
+            xmlhttp.send();
+        }
+        function myFunction(xml, i)
+        {
+            var xmlDoc = xml.responseXML;
+            x = xmlDoc.getElementsByTagName("BOOK");
+            document.getElementById("ShowBook").innerHTML =
+                "Language: " +  x[i].getElementsByTagName("LANGUAGE")[0].childNodes[0].nodeValue +
+                "<br>Version: " + x[i].getElementsByTagName("VERSION")[0].childNodes[0].nodeValue;
+        }
+    </script>
+
+</body>
+</html>
